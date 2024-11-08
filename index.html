@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Medicine Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header with Logo and Navigation -->
+    <header>
+        <div class="logo">
+            <h1>PharmacyStore</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Pharmacy Store</h1>
+            <p>Your health is our priority. Get your medicines delivered at home with ease.</p>
+            <button class="btn-main">Shop Now</button>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+        <input type="text" id="search-bar" placeholder="Search for a product..." class="search-bar" />
+        
+        <!-- Product Cards -->
+        <div class="product-card fade-in">
+            <img src="med1.jpg" alt="Pain Reliever">
+            <h3>Pain Reliever Tablets</h3>
+            <p>Price: ₹150</p>
+            <div class="description">
+                <p>This is a strong pain reliever for headaches, body aches, and minor pain.</p>
+            </div>
+            <button class="btn-add">Add to Cart</button>
+        </div>
+    
+        <div class="product-card fade-in">
+            <img src="med2.jpg" alt="Cough Syrup">
+            <h3>Cough Syrup</h3>
+            <p>Price: ₹200</p>
+            <div class="description">
+                <p>Effective syrup to relieve cough and cold symptoms. Contains natural ingredients.</p>
+            </div>
+            <button class="btn-add">Add to Cart</button>
+        </div>
+    
+        <div class="product-card fade-in">
+            <img src="med3.jpeg" alt="Antibiotics">
+            <h3>Antibiotic Capsules</h3>
+            <p>Price: ₹350</p>
+            <div class="description">
+                <p>Antibiotics to treat bacterial infections, including skin, urinary, and respiratory tract infections.</p>
+            </div>
+            <button class="btn-add">Add to Cart</button>
+        </div>
+    
+        <div class="product-card fade-in">
+            <img src="med4.webp" alt="Cold Relief">
+            <h3>Cold Relief Tablets</h3>
+            <p>Price: ₹100</p>
+            <div class="description">
+                <p>Helps relieve cold symptoms such as a runny nose, sneezing, and sore throat.</p>
+            </div>
+            <button class="btn-add">Add to Cart</button>
+        </div>
+    
+        <div class="product-card fade-in">
+            <img src="med5.jpeg" alt="Fever Reducer">
+            <h3>Fever Reducer Tablets</h3>
+            <p>Price: ₹180</p>
+            <div class="description">
+                <p>Efficient in reducing fever and managing symptoms of flu and cold.</p>
+            </div>
+            <button class="btn-add">Add to Cart</button>
+        </div>
+    
+        <div class="product-card fade-in">
+            <img src="med6.jpg" alt="Allergy Medicine">
+            <h3>Allergy Medicine</h3>
+            <p>Price: ₹250</p>
+            <div class="description">
+                <p>Relieves symptoms of allergies such as sneezing, itching, and runny nose.</p>
+            </div>
+            <button class="btn-add">Add to Cart</button>
+        </div>
+    
+        <div class="product-card fade-in">
+            <img src="med7.jpg" alt="Vitamins">
+            <h3>Vitamins and Supplements</h3>
+            <p>Price: ₹450</p>
+            <div class="description">
+                <p>Boosts your daily nutrition with essential vitamins and minerals.</p>
+            </div>
+            <button class="btn-add">Add to Cart</button>
+        </div>
+    
+        <div class="product-card fade-in">
+            <img src="med8.jpeg" alt="Heart Health">
+            <h3>Heart Health Capsules</h3>
+            <p>Price: ₹550</p>
+            <div class="description">
+                <p>Supports cardiovascular health and helps manage cholesterol levels.</p>
+            </div>
+            <button class="btn-add">Add to Cart</button>
+        </div>
+    
+        <div class="product-card fade-in">
+            <img src="med9.webp" alt="Pain Ointment">
+            <h3>Pain Relief Ointment</h3>
+            <p>Price: ₹120</p>
+            <div class="description">
+                <p>Apply this topical ointment for relief from muscle pain and joint discomfort.</p>
+            </div>
+            <button class="btn-add">Add to Cart</button>
+        </div>
+    
+        <div class="product-card fade-in">
+            <img src="med10.jpg" alt="Digestive Aid">
+            <h3>Digestive Aid</h3>
+            <p>Price: ₹180</p>
+            <div class="description">
+                <p>Helps improve digestion and reduce bloating after meals.</p>
+            </div>
+            <button class="btn-add">Add to Cart</button>
+        </div>
+    
+        <div class="product-card fade-in">
+            <img src="med11.webp" alt="Skin Cream">
+            <h3>Skin Care Cream</h3>
+            <p>Price: ₹230</p>
+            <div class="description">
+                <p>Moisturizes and nourishes your skin, helping with dryness and irritation.</p>
+            </div>
+            <button class="btn-add">Add to Cart</button>
+        </div>
+    
+        <div class="product-card fade-in">
+            <img src="med12.jpg" alt="Sleep Aid">
+            <h3>Sleep Aid Capsules</h3>
+            <p>Price: ₹280</p>
+            <div class="description">
+                <p>Helps promote restful sleep and reduce insomnia symptoms.</p>
+            </div>
+            <button class="btn-add">Add to Cart</button>
+        </div>
+    
+        <div class="product-card fade-in">
+            <img src="med13.jpeg" alt="Multivitamins">
+            <h3>Multivitamins</h3>
+            <p>Price: ₹300</p>
+            <div class="description">
+                <p>A blend of essential vitamins and minerals for your daily health.</p>
+            </div>
+            <button class="btn-add">Add to Cart</button>
+        </div>
+    </section>
+    
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p>PharmacyStore is dedicated to providing quality medicines and healthcare products delivered to your doorstep.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: support@pharmacystore.com</p>
+            <p>Phone: +91-XXXXXXXXXX</p>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2024 PharmacyStore. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+    </div>
+</footer>
+
+   
+    <!-- Link to JavaScript files -->
+    <script src="cart.js"></script>
+    <script src="search.js"></script>
+    <script src="animations.js"></script>
+</body>
+</html>
